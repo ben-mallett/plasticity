@@ -1,5 +1,6 @@
 "use client"
 
+import ImageCard from "@/components/ImageCard";
 import { Unity, useUnityContext } from "react-unity-webgl";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
   })
   return (
     <main className="">
-        <Unity className="h-1/2 w-1/2" unityProvider={unityProvider}/>
+        <ImageCard/>
     </main>
   );
 }
