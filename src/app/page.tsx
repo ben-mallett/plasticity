@@ -12,7 +12,7 @@ export default function Home() {
   })
   return (
     <main className="">
-        <ImageCard/>
+        <ImageCard src="vercel.svg"/>
     </main>
   );
 }

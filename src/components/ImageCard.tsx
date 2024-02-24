@@ -3,11 +3,15 @@
 import Image from 'next/image'
 import { Card, CardHeader, CardTitle } from './ui/card';
 
-export default function ImageCard() {
+type ImageProps {
+    src: string;
+}
+export default function ImageCard(props: ImageProps) {
+
   return (
     <div className="h-screen w-full flex flex-row justify-between items-center bg-black">
         <Image 
-            src="vercel.svg"
+            src={props.src}
             alt="random image"
             width="100"
             height="100"
