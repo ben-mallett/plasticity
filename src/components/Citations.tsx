@@ -1,44 +1,43 @@
 import { Link } from "lucide-react"
 const citations = [
     {
-        name: "name",
-        url: "url"
+        name: "National Oceanic and Atmospheric Administration",
+        url: "https://www.ncei.noaa.gov/products/microplastics"
     },
     {
-        name: "",
-        url: ""
+        name: "National Oceanic and Atmospheric Administration",
+        url: "https://marinedebris.noaa.gov/discover-marine-debris/garbage-patches"},
+    {
+        name: "Nature Communications",
+        url: "https://www.nature.com/articles/s41467-022-33334-5"
     },
     {
-        name: "",
-        url: ""
+        name: "United Nations Enviorment Programme",
+        url: "https://www.unep.org/plastic-pollution"
     },
     {
-        name: "",
-        url: ""
+        name: "United Nations Enviorment Programme",
+        url: "https://leap.unep.org/en/content/basic-page/plastics-pollution-toolkit-about"        
     },
     {
-        name: "",
-        url: ""
+        name: "Fauna & Flora",
+        url: "https://www.fauna-flora.org/explained/how-does-plastic-pollution-affect-marine-life/"
     },
     {
-        name: "",
-        url: ""
+        name: "World Wildlife Fund",
+        url: "https://www.worldwildlife.org/stories/what-do-sea-turtles-eat-unfortunately-plastic-bags"
     },
     {
-        name: "",
-        url: ""
+        name: "Science Daily",
+        url: "https://www.sciencedaily.com/releases/2021/08/210820111045.htm"
     },
     {
-        name: "",
-        url: ""
+        name: "Center for Biological Diversity",
+        url: "https://www.biologicaldiversity.org/campaigns/ocean_plastics/"
     },
     {
-        name: "",
-        url: ""
-    },
-    {
-        name: "",
-        url: ""
+        name: "Science.org",
+        url: "https://www.science.org/content/article/plastic-trash-making-coral-reefs-sick"
     },
 ]
 
