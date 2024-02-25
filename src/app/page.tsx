@@ -3,6 +3,9 @@
 import ImageCard from "@/components/ImageCard";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import { Button } from "@/components/ui/button"
+import Lander from "@/components/Lander";
+import Explanation from "@/components/Explanation";
+import DataVis from "@/components/DataVis";
 
 export default function Home() {
   const { unityProvider } = useUnityContext({
@@ -12,9 +15,11 @@ export default function Home() {
     codeUrl: "/build/samplebuild.wasm",
   })
   return (
-    <main className="">
+    <main className="flex flex-col bg-white">
+        <Lander/>
+        <Explanation/>
         <ImageCard src="vercel.svg"/>
-        <Button variant="outline">Button</Button>
+        <DataVis/>
 
     </main>
   );
