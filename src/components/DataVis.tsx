@@ -2,8 +2,15 @@
 
 import Earth from "./Earth";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { Unity, useUnityContext } from "react-unity-webgl";
 
 export default function DataVis() {
+    const { unityProvider } = useUnityContext({
+        loaderUrl: "/Build.loader.js",
+        dataUrl: "/Build.data",
+        frameworkUrl: "/Build.framework.js",
+        codeUrl: "/Build.wasm",
+    })
 
     return (
         <div className="w-full h-full p-2 flex flex-col justify-start gap-2">
@@ -20,8 +27,8 @@ export default function DataVis() {
                     </div>
                 </TabsContent>
                 <TabsContent value="game" className="p-2">
-                    <div className="w-full h-screen border-2 border-black p-2">
-                        GAME
+                    <div className="w-full h-screen border-2 border-black p-2 flex justify-center items-center">
+                        <Unity unityProvider={unityProvider} style={{width: "1536px", height: "864px"}}/>
                     </div>
                 </TabsContent>
             </Tabs>

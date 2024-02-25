@@ -14,10 +14,6 @@ function Earth() {
             .then(setMicroplaticsData);
     }, []);
 
-    useEffect(() => {
-        console.log(microplasticsData);
-    }, [microplasticsData]);
-
     return (
         <div className="w-full h-full flex flex-col justify-center items-center">
             <Globe
