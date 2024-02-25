@@ -8,8 +8,8 @@ export default function DataVis() {
     return (
         <div className="w-full h-full p-2 flex flex-col justify-start gap-2">
             <h3 className="text-black text-6xl p-2">Explore Ocean Microplastics</h3>
-            <h4 className="text-black text-4xl p-2">Below are two interactive data experiences for NOAA's </h4>
-            <Tabs className="w-full rounded-none p-2" defaultValue="datavis">
+            <h4 className="text-black text-xl p-2">Experience NOAA's <a href="https://www.ncei.noaa.gov/products/microplastics" className="underline">Marine Microplastics Dataset</a>, a dataset containing thousands microplastic concentrations sampled from all over the globe. </h4>
+            <Tabs defaultValue="datavis">  
                 <TabsList className="w-full rounded-none">
                     <TabsTrigger className="w-1/2 rounded-none m-2 border-2 border-black" value="datavis">Visualization</TabsTrigger>
                     <TabsTrigger className="w-1/2 rounded-none m-2 border-2 border-black" value="game">Game</TabsTrigger>

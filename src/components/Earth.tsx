@@ -8,7 +8,7 @@ function Earth() {
     const [microplasticsData, setMicroplaticsData] = useState([]);
 
     useEffect(() => {
-        fetch("/datasets/marine_microplastics.csv")
+        fetch("/datasets/marine-microplastics.csv")
             .then((res) => res.text())
             .then((csv) => d3.csvParse(csv))
             .then(setMicroplaticsData);
@@ -19,7 +19,7 @@ function Earth() {
     }, [microplasticsData]);
 
     return (
-        <div className="w-full h-full flex justify-center items-center">
+        <div className="w-full h-full flex flex-col justify-center items-center">
             <Globe
                 width="1536" // Set width to 100% of the parent
                 height="864" // Set height to 100% of the parent
